@@ -505,10 +505,44 @@ body {
 @media (max-width: 991px) {
     .menu-header {
         padding: 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
+    .custom-nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
     .nav-list {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-list li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .nav-list .menu-links {
+        padding: 8px 0;
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0 0 0 15px;
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: var(--text-light);
+        padding: 5px 0;
     }
     
     .slide-title h2 {
