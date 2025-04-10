@@ -66,6 +66,42 @@ body {
     z-index: 1000;
 }
 
+.navbar-toggler {
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+    display: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 194, 199, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .custom-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 26, 26, 0.95);
+        padding: 1rem;
+        border-top: 1px solid var(--primary-color);
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-menu {
+        background: rgba(10, 26, 26, 0.95);
+        margin-left: 1rem;
+    }
+}
+
 .menu-header {
     display: flex;
     justify-content: space-between;
@@ -113,7 +149,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 80vh;
+    height: 60vh;
     background: var(--dark-bg);
     margin-top: 80px;
     overflow: hidden;
@@ -121,7 +157,7 @@ body {
 
 .hero-inner {
     position: relative;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
