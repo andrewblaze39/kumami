@@ -147,6 +147,21 @@ body {
 }
 
 /* Hero Section */
+.hero-text .hero-tagline {
+    color: var(--text-light);
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.hero-text .hero-description {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
 .hero-section {
     position: relative;
     height: 75vh;
@@ -286,11 +301,11 @@ body {
 
 /* Section Styles */
 .pb130 {
-    padding-bottom: 60px;
+    padding-bottom: 45px;
 }
 
 .pt130 {
-    padding-top: 60px;
+    padding-top: 45px;
 }
 
 .mb20 {
