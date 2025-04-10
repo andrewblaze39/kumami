@@ -149,7 +149,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 60vh;
+    height: 75vh;
     background: var(--dark-bg);
     margin-top: 80px;
     overflow: hidden;
@@ -157,16 +157,29 @@ body {
 
 .hero-inner {
     position: relative;
-    height: 60vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(10, 26, 26, 0.85), rgba(10, 26, 26, 0.6));
+    pointer-events: none;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .hero-title h2 {
@@ -181,6 +194,7 @@ body {
     color: var(--text-light);
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    max-width: 600px;
 }
 
 .hero-image {
@@ -190,12 +204,66 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 2rem;
 }
 
 .hero-image img {
-    max-height: 60vh;
+    max-height: 65vh;
     width: auto;
     object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .hero-title h2 {
+        font-size: 3rem;
+    }
+
+    .hero-image img {
+        max-height: 55vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section,
+    .hero-inner {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        margin: 0 auto 1.5rem;
+    }
+
+    .hero-image img {
+        max-height: 45vh;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section,
+    .hero-inner {
+        min-height: 90vh;
+    }
+
+    .hero-title h2 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        max-height: 35vh;
+    }
 }
 
 /* Featured Image Section */
