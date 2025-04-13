@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a931fe63.css",
-    "main.js": "/static/js/main.fe952c60.js",
-    "static/js/885.de8e4319.chunk.js": "/static/js/885.de8e4319.chunk.js",
-    "static/js/453.16537368.chunk.js": "/static/js/453.16537368.chunk.js",
-    "static/media/Asset landing page.png": "/static/media/Asset landing page.ea82ef4e366d7458af09.png",
-    "static/media/589.jpg": "/static/media/589.856b98d6e9b3e85f9444.jpg",
-    "static/media/stacking (s).png": "/static/media/stacking (s).6392eb173039a46e6540.png",
-    "index.html": "/index.html",
-    "main.a931fe63.css.map": "/static/css/main.a931fe63.css.map",
-    "main.fe952c60.js.map": "/static/js/main.fe952c60.js.map",
-    "885.de8e4319.chunk.js.map": "/static/js/885.de8e4319.chunk.js.map",
-    "453.16537368.chunk.js.map": "/static/js/453.16537368.chunk.js.map"
+    "main.css": "/kumami/static/css/main.a931fe63.css",
+    "main.js": "/kumami/static/js/main.7a60889d.js",
+    "static/js/885.de8e4319.chunk.js": "/kumami/static/js/885.de8e4319.chunk.js",
+    "static/js/453.16537368.chunk.js": "/kumami/static/js/453.16537368.chunk.js",
+    "static/media/Asset landing page.png": "/kumami/static/media/Asset landing page.ea82ef4e366d7458af09.png",
+    "static/media/589.jpg": "/kumami/static/media/589.856b98d6e9b3e85f9444.jpg",
+    "static/media/stacking (s).png": "/kumami/static/media/stacking (s).6392eb173039a46e6540.png",
+    "index.html": "/kumami/index.html",
+    "main.a931fe63.css.map": "/kumami/static/css/main.a931fe63.css.map",
+    "main.7a60889d.js.map": "/kumami/static/js/main.7a60889d.js.map",
+    "885.de8e4319.chunk.js.map": "/kumami/static/js/885.de8e4319.chunk.js.map",
+    "453.16537368.chunk.js.map": "/kumami/static/js/453.16537368.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a931fe63.css",
-    "static/js/main.fe952c60.js"
+    "static/js/main.7a60889d.js"
   ]
 }
