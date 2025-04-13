@@ -34,27 +34,22 @@ body {
   width: 100%;
 }
 
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 992px) {
   .navbar-collapse {
-    display: block !important;
-  }
-
-  .navbar-collapse.collapse {
-    display: block !important;
-  }
-
-  .custom-nav {
-    margin-left: auto;
-  }
-
-  .nav-list {
     display: flex !important;
-    flex-direction: row !important;
+  }
+  .navbar-toggler {
+    display: none;
   }
 }
 
 .custom-nav {
-  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-links {
@@ -79,6 +74,7 @@ body {
 
 .nav-brand {
   display: block;
+  margin-left: auto;
 }
 
 .mega-white-logo, .mega-darks-logo {
@@ -167,6 +163,17 @@ body {
   line-height: 1.8;
 }
 
+.hero-image {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Ecosystem Section */
 .dg-service2 {
   padding: 100px 0;
@@ -194,6 +201,119 @@ body {
   margin-bottom: 1rem;
 }
 
+/* About Page Styles */
+.about-page {
+  background: var(--bg-gradient-dark);
+  min-height: 100vh;
+  color: var(--text-light);
+}
+
+.about-hero {
+  padding: 120px 0 60px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission-section,
+.founders-section,
+.values-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.mission-text,
+.hero-text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.founder-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 194, 199, 0.1);
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--primary-color);
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder-title {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.founder-bio {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 194, 199, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .s-card-icon img {
   height: 60px;
   width: auto;
@@ -210,9 +330,163 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* About Page Styles */
+.about-page {
+  padding-top: 80px;
+  color: var(--text-light);
+}
+
+.about-hero {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission-section,
+.founders-section,
+.values-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.mission-text,
+.hero-text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.founder-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 194, 199, 0.1);
+}
+
+.founder-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-info {
+  text-align: center;
+}
+
+.founder-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder-title {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.founder-bio {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 194, 199, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-info {
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 194, 199, 0.1);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contact-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--text-light);
+}
+
 /* Contact Section */
 .dg-contact {
   background: var(--dark-bg);
+  text-align: center;
 }
 
 .btn-main {
@@ -264,14 +538,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 991px) {
-  .navbar-collapse {
-    display: none;
-  }
-
-  .navbar-collapse.show {
-    display: block !important;
-  }
-
   .navbar-toggler {
     display: block !important;
   }

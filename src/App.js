@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Ecosystem from './components/Ecosystem';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   React.useEffect(() => {
@@ -19,9 +20,16 @@ function App() {
       <div className="App dark-main">
         <Navbar />
         <main>
-          <Hero />
-          <Ecosystem />
-          <Contact />
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <Ecosystem />
+                <Contact />
+              </>
+            } />
+            <Route path="/about" element={<About />} />
+          </Routes>
         </main>
         <Footer />
       </div>
