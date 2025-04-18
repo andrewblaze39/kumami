@@ -1,4 +1,6 @@
 import React from 'react';
+import { AuthProvider } from './contexts/AuthContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -9,6 +11,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import News from './components/News';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   React.useEffect(() => {
@@ -18,7 +22,8 @@ function App() {
 
   return (
     <Router>
-      <div className="App dark-main">
+      <AuthProvider>
+        <div className="App dark-main">
         <Navbar />
         <main>
           <Routes>
@@ -31,10 +36,13 @@ function App() {
             } />
             <Route path="/about" element={<About />} />
             <Route path="/news" element={<News />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
         <Footer />
       </div>
+      </AuthProvider>
     </Router>
   );
 }
