@@ -8,6 +8,7 @@ import Ecosystem from './components/Ecosystem';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
+import News from './components/News';
 
 function App() {
   React.useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
               </>
             } />
             <Route path="/about" element={<About />} />
+            <Route path="/news" element={<News />} />
           </Routes>
         </main>
         <Footer />
